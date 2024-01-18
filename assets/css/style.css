@@ -14,9 +14,15 @@ header {
   background: rgb(9, 9, 121);
   background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
   text-align: center;
-  color: white;
   padding: 1.5em 1.5em;
   margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+header,
+nav {
+  color: white;
+  margin-bottom: 15px;
+  margin: 0;
 }
 
 /* MAIN */
@@ -28,21 +34,28 @@ main {
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
-
+p,
+address {
+  margin-bottom: 15px;
+}
 /* TABELLE */
 
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
-
+aside h3 {
+  text-align: center;
+  color: darkgray;
+  text-transform: uppercase;
+}
 /* FOOTER */
 
 footer {
   background: rgb(9, 9, 121);
-  background: linear-gradient(90deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 30%);
+  background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 30%);
   color: white;
   font-size: 1.3em;
-  padding: 1.5em 1.5em;
+  padding: 1.5em;
   margin-bottom: 1.5em;
   text-align: center;
 }
