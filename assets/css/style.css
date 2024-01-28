@@ -180,6 +180,7 @@ footer {
   padding: 1.5em;
   margin-bottom: 1.5em;
   text-align: center;
+  box-shadow: 0 3px 3px #444;
 }
 
 footer a {
