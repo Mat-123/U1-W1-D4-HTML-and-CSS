@@ -37,24 +37,31 @@
     </header>
 
     <main>
-      <h3>Come creare un template per i post</h3>
-      <h6>di Mario Rossi - pubblicato il 25-10-2020</h6>
-      <div>
-        La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le parti comuni da applicare a
-        tutte le pagine.
-        <br />
-        Le varie aree saranno quindi suddivise in:
-        <ul>
-          <li>Contenuti di intestazione del tag &lt;header&gt;</li>
-          <li>Contenuti centrali variabili del tag &lt;main&gt;</li>
-          <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
-        </ul>
-        <br />
-        Formattazione del codice
-        <br />
+      <article>
+        <h1>Come creare un template per i post</h1>
+
         <p>
-          Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezione con i CSS. Perciò
-          i passi saranno:
+          <i class="fas fa-pen-square"
+            >di Mario Rossi - <span><i class="fas fa-clock"></i>pubblicato il 25-10-2020</span></i
+          >
+        </p>
+        <p>
+          La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le
+          <strong>parti comuni</strong> da applicare a tutte le pagine.
+        </p>
+
+        <p>Le varie aree saranno quindi suddivise in:</p>
+        <ul>
+          <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
+          <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code></li>
+          <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
+        </ul>
+
+        <h2>Formattazione del codice</h2>
+
+        <p>
+          Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da
+          <strong>selezione con i CSS</strong>. Perciò i passi saranno:
         </p>
 
         <ol>
@@ -62,11 +69,9 @@
           <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
           <li>Applicare gli stili CSS</li>
         </ol>
-        L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.
+        <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
 
-        <br />
-
-        <table border="2px">
+        <table>
           <caption>
             Diffusione dei CSS
           </caption>
@@ -80,18 +85,18 @@
           <tbody>
             <tr>
               <td>2000</td>
-              <td>20%</td>
-              <td>17%</td>
+              <td>20&percnt;</td>
+              <td>17&percnt;</td>
             </tr>
             <tr>
               <td>2002</td>
-              <td>35%</td>
-              <td>22%</td>
+              <td>35&percnt;</td>
+              <td>22&percnt;</td>
             </tr>
             <tr>
               <td>2004</td>
-              <td>45%</td>
-              <td>42%</td>
+              <td>45&percnt;</td>
+              <td>42&percnt;</td>
             </tr>
             <tr>
               <td>2008</td>
@@ -105,10 +110,11 @@
             </tr>
           </tbody>
         </table>
-        Un test di validazione potrà essere fatto tramite il <a href="#" target="_blank">tool online</a> dedicato allo
-        scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo di essere stati dei veri developers
-        come loro:
-        <br />
+        <p>
+          Un test di validazione potrà essere fatto tramite il <a href="#" target="_blank">tool online</a> dedicato allo
+          scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo di essere stati dei veri
+          developers come loro:
+        </p>
         <iframe
           width="300"
           height="169"
@@ -117,50 +123,35 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
-        <p>Vuoi rimanere aggiornato su altre novità del blog? Iscrivi alla nostra newsletter:</p>
-        <form>
-          <label for="name">Nome</label>
-          <br />
+        >
+        </iframe>
+        <section>
+          <h2>Novità</h2>
+          <p>Vuoi rimanere aggiornato su altre novità del blog? Iscrivi alla nostra newsletter:</p>
+          <form>
+            <input type="email" id="email" placeholder="Inserisci la tua mail..." required />
 
-          <input type="text" id="name" placeholder="Inserisci il tuo nome..." required />
+            <button type="submit">Iscriviti!</button>
+          </form>
+        </section>
+      </article>
 
-          <br />
-          <label for="email">E-Mail</label>
-          <br />
-          <input type="text" id="email" placeholder="Inserisci la tua mail..." required />
-          <br />
-          <button type="submit">Iscriviti!</button>
-        </form>
-      </div>
-      <hr />
       <aside>
+        <h2>Articoli Correlati:</h2>
         <div>
-          <h3>Articoli Correlati:</h3>
-
-            <a href="#">Validare il codice HTML</a>
-            <br />
-            Categoria: develop
-            <br />
-            Data: 18-09-2023
-            <br />
-          </p>
-          <p>
-            <a href="#">Correggere la sintassi</a>
-            <br />
-            Categoria: develop
-            <br />
-            Data: 16-09-2020
-            <br />
-          </p>
-          <p>
-            <a href="#">Meno Kb nella pagina</a>
-            <br />
-            Categoria: ottimizzazione
-            <br />
-            Data: 16-09-2020
-            <br />
-          </p>
+          <a href="#">Validare il codice HTML</a>
+          <p><i class="fas fa-tag"></i> Categoria: develop</p>
+          <p><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
+        </div>
+        <div>
+          <a href="#">Correggere la sintassi</a>
+          <p><i class="fas fa-tag"></i> Categoria: develop</p>
+          <p><i class="fas fa-calendar-alt"></i> Data: 16-9-2020</p>
+        </div>
+        <div>
+          <a href="#">Meno Kb nella pagina</a>
+          <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
+          <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
         </div>
       </aside>
     </main>

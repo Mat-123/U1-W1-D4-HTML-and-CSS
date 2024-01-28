@@ -1,24 +1,49 @@
 /* IMPOSTAZIONI GENERALI */
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 60%;
 }
 body {
-  font-family: "Poppins", "Helvetica" sans-serif;
-  font-size: 1.5rem;
+  font-family: Poppins, "Helvetica", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
   background-image: url(../img/sfondo.png);
   background-position: center center;
-  padding: 1.2em;
+  padding: 15px;
 }
+
 /* HEADER */
 header {
   background: rgb(9, 9, 121);
   background: linear-gradient(0deg, rgba(9, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
   text-align: center;
-  padding: 1.5em 1.5em;
+  padding: 2em 1.5em;
   margin-bottom: 1.5em;
   text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 3px 3px #444;
 }
-header,
+
+header div img {
+  margin-bottom: 20px;
+}
+
+header nav ul {
+  margin: 0;
+}
+
+header nav li:hover {
+  color: red;
+}
+
+header nav li::before {
+  content: "\22c6\0020";
+}
+
 nav,
 a {
   color: white;
@@ -29,25 +54,121 @@ a {
 /* MAIN */
 
 main {
-  background: white;
-  padding: 1.5em 1.5em;
+  background: #fff;
+  box-shadow: 0 3px 3px #444;
+  padding: 2em 1em;
   margin-bottom: 1.5em;
 }
 
+section {
+  background-color: #e3e3e3;
+  padding: 1rem;
+  margin-bottom: 2em;
+}
+
 /* ELEMENTI NEL MAIN - ARTICLE */
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.7rem;
+}
+
+h1 + p {
+  color: #a0a0a0;
+}
+
+strong {
+  color: #a02560;
+}
+code {
+  background-color: #e3e3e3;
+  border: 1px solid #969494;
+  border-radius: 4px;
+}
+
 p,
-address {
-  margin-bottom: 15px;
+address,
+ul,
+ol {
+  margin-bottom: 1.2rem;
+}
+
+ul,
+ol {
+  margin-left: 2em;
+}
+
+article ul li::before {
+  content: "\22c6\0020";
+}
+
+a {
+  color: #00a0c6;
 }
 /* TABELLE */
+table {
+  margin-bottom: 1.5em;
+}
+caption {
+  font-style: italic;
+}
+thead tr {
+  background-color: #3f6bca;
+  color: white;
+}
 
-/* FORM */
-
-/* ELEMENTI NELL' ASIDE */
-aside h3 {
+th,
+td {
+  padding: 12px 15px;
+  vertical-align: bottom;
   text-align: center;
-  color: darkgray;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #3f6bca;
+}
+
+iframe {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+/* FORM */
+section h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
   text-transform: uppercase;
+  margin-bottom: 1em;
+}
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+  text-align: center;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+aside div {
+  background-color: #e3e3e3;
+  margin-bottom: 1em;
+  border: 1px solid #c3c3c3;
+  padding: 1em;
+}
+
+aside div p:last-child {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  text-align: right;
 }
 /* FOOTER */
 
@@ -59,4 +180,8 @@ footer {
   padding: 1.5em;
   margin-bottom: 1.5em;
   text-align: center;
+}
+
+footer a {
+  color: fuchsia;
 }
